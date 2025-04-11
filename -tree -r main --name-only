@@ -1,0 +1,119 @@
+[33mcommit 6c8b347b12cefe6c760d54e2379105adc4fc7d5a[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: OrchidLan23 <chenruolan.elaine@gmail.com>
+Date:   Fri Apr 11 20:55:49 2025 +0800
+
+    Initial commit
+
+ .gitattributes                                     |    2 [32m+[m
+ .gitignore                                         |   72 [32m+[m
+ .vscode/extensions.json                            |    5 [32m+[m
+ .vscode/launch.json                                |   10 [32m+[m
+ .vscode/settings.json                              |   55 [32m+[m
+ Assets/Editor.meta                                 |    8 [32m+[m
+ Assets/InteractionSDK.meta                         |    8 [32m+[m
+ .../InteractionSDK/ComprehensiveInteraction.prefab |   70 [32m+[m
+ .../ComprehensiveInteraction.prefab.meta           |    7 [32m+[m
+ Assets/MetaXR.meta                                 |    8 [32m+[m
+ Assets/MetaXR/MetaXRProjectSettings.asset          |   21 [32m+[m
+ Assets/MetaXR/MetaXRProjectSettings.asset.meta     |    8 [32m+[m
+ Assets/Oculus.meta                                 |    8 [32m+[m
+ Assets/Oculus/OculusProjectConfig.asset            |   48 [32m+[m
+ Assets/Oculus/OculusProjectConfig.asset.meta       |    8 [32m+[m
+ Assets/Plugins.meta                                |    8 [32m+[m
+ Assets/Plugins/Android.meta                        |    8 [32m+[m
+ Assets/Plugins/Android/AndroidManifest.xml         |   25 [32m+[m
+ Assets/Plugins/Android/AndroidManifest.xml.meta    |    7 [32m+[m
+ Assets/Readme.asset                                |   34 [32m+[m
+ Assets/Readme.asset.meta                           |    8 [32m+[m
+ Assets/Resources.meta                              |    8 [32m+[m
+ Assets/Resources/ImmersiveDebuggerSettings.asset   |   41 [32m+[m
+ .../Resources/ImmersiveDebuggerSettings.asset.meta |    8 [32m+[m
+ Assets/Resources/InputActions.asset                |   16 [32m+[m
+ Assets/Resources/InputActions.asset.meta           |    8 [32m+[m
+ .../Resources/MetaXRAcousticMaterialMapping.asset  |   16 [32m+[m
+ .../MetaXRAcousticMaterialMapping.asset.meta       |    8 [32m+[m
+ Assets/Resources/MetaXRAcousticSettings.asset      |   18 [32m+[m
+ Assets/Resources/MetaXRAcousticSettings.asset.meta |    8 [32m+[m
+ Assets/Resources/MetaXRAudioSettings.asset         |   15 [32m+[m
+ Assets/Resources/MetaXRAudioSettings.asset.meta    |    8 [32m+[m
+ Assets/Resources/OVRBuildConfig.asset              |   14 [32m+[m
+ Assets/Resources/OVRBuildConfig.asset.meta         |    8 [32m+[m
+ Assets/Resources/OVRPlatformToolSettings.asset     |   22 [32m+[m
+ .../Resources/OVRPlatformToolSettings.asset.meta   |    8 [32m+[m
+ Assets/Resources/OculusRuntimeSettings.asset       |   22 [32m+[m
+ Assets/Resources/OculusRuntimeSettings.asset.meta  |    8 [32m+[m
+ Assets/Settings.meta                               |    8 [32m+[m
+ Assets/Settings/SampleSceneProfile.asset           |  123 [32m+[m
+ Assets/Settings/SampleSceneProfile.asset.meta      |    8 [32m+[m
+ Assets/Settings/URP-Balanced-Renderer.asset        |   76 [32m+[m
+ Assets/Settings/URP-Balanced-Renderer.asset.meta   |    8 [32m+[m
+ Assets/Settings/URP-Balanced.asset                 |  114 [32m+[m
+ Assets/Settings/URP-Balanced.asset.meta            |    8 [32m+[m
+ Assets/Settings/URP-HighFidelity-Renderer.asset    |   98 [32m+[m
+ .../Settings/URP-HighFidelity-Renderer.asset.meta  |    8 [32m+[m
+ Assets/Settings/URP-HighFidelity.asset             |  114 [32m+[m
+ Assets/Settings/URP-HighFidelity.asset.meta        |    8 [32m+[m
+ Assets/Settings/URP-Performant-Renderer.asset      |   52 [32m+[m
+ Assets/Settings/URP-Performant-Renderer.asset.meta |    8 [32m+[m
+ Assets/Settings/URP-Performant.asset               |  114 [32m+[m
+ Assets/Settings/URP-Performant.asset.meta          |    8 [32m+[m
+ Assets/StreamingAssets.meta                        |    8 [32m+[m
+ Assets/TutorialInfo.meta                           |    8 [32m+[m
+ Assets/TutorialInfo/Icons.meta                     |    9 [32m+[m
+ Assets/TutorialInfo/Icons/URP.png                  |  Bin [31m0[m -> [32m24069[m bytes
+ Assets/TutorialInfo/Icons/URP.png.meta             |  134 [32m+[m
+ Assets/TutorialInfo/Layout.wlt                     |  654 [32m++++[m
+ Assets/TutorialInfo/Layout.wlt.meta                |    8 [32m+[m
+ Assets/TutorialInfo/Scripts.meta                   |    9 [32m+[m
+ Assets/TutorialInfo/Scripts/Editor.meta            |    9 [32m+[m
+ Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs |  242 [32m++[m
+ .../Scripts/Editor/ReadmeEditor.cs.meta            |   12 [32m+[m
+ Assets/TutorialInfo/Scripts/Readme.cs              |   16 [32m+[m
+ Assets/TutorialInfo/Scripts/Readme.cs.meta         |   12 [32m+[m
+ Assets/UniversalRenderPipelineGlobalSettings.asset |   41 [32m+[m
+ ...niversalRenderPipelineGlobalSettings.asset.meta |    8 [32m+[m
+ Assets/XR.meta                                     |    8 [32m+[m
+ Assets/XR/Loaders.meta                             |    8 [32m+[m
+ Assets/XR/Loaders/OculusLoader.asset               |   14 [32m+[m
+ Assets/XR/Loaders/OculusLoader.asset.meta          |    8 [32m+[m
+ Assets/XR/Loaders/OpenXRLoader.asset               |   14 [32m+[m
+ Assets/XR/Loaders/OpenXRLoader.asset.meta          |    8 [32m+[m
+ Assets/XR/Settings.meta                            |    8 [32m+[m
+ Assets/XR/Settings/OculusSettings.asset            |   34 [32m+[m
+ Assets/XR/Settings/OculusSettings.asset.meta       |    8 [32m+[m
+ Assets/XR/Settings/OpenXR Editor Settings.asset    |   21 [32m+[m
+ .../XR/Settings/OpenXR Editor Settings.asset.meta  |    8 [32m+[m
+ Assets/XR/Settings/OpenXR Package Settings.asset   | 1465 [32m+++++++[m
+ .../XR/Settings/OpenXR Package Settings.asset.meta |    8 [32m+[m
+ Assets/XR/XRGeneralSettingsPerBuildTarget.asset    |  112 [32m+[m
+ .../XR/XRGeneralSettingsPerBuildTarget.asset.meta  |    8 [32m+[m
+ Assets/_Project.meta                               |    8 [32m+[m
+ Assets/_Project/Art.meta                           |    8 [32m+[m
+ Assets/_Project/Art/Animations.meta                |    8 [32m+[m
+ Assets/_Project/Art/Materials.meta                 |    8 [32m+[m
+ Assets/_Project/Art/Materials/MAT_Mirror.mat       |  132 [32m+[m
+ Assets/_Project/Art/Materials/MAT_Mirror.mat.meta  |    8 [32m+[m
+ Assets/_Project/Art/Materials/MAT_VideoScreen.mat  |  134 [32m+[m
+ .../Art/Materials/MAT_VideoScreen.mat.meta         |    8 [32m+[m
+ Assets/_Project/Art/Models.meta                    |    8 [32m+[m
+ Assets/_Project/Art/Models/Scene2_bedroom.fbx      |  Bin [31m0[m -> [32m239605916[m bytes
+ Assets/_Project/Art/Models/Scene2_bedroom.fbx.meta |  109 [32m+[m
+ Assets/_Project/Art/Models/Scene3_SocialMS.fbx     |  Bin [31m0[m -> [32m523852[m bytes
+ .../_Project/Art/Models/Scene3_SocialMS.fbx.meta   |  109 [32m+[m
+ Assets/_Project/Art/Models/Zheng_adult_V7.fbx      |  Bin [31m0[m -> [32m308768508[m bytes
+ Assets/_Project/Art/Models/Zheng_adult_V7.fbx.meta | 1322 [32m+++++++[m
+ Assets/_Project/Art/RenderTextures.meta            |    8 [32m+[m
+ .../Art/RenderTextures/RT_Mirror.renderTexture     |   40 [32m+[m
+ .../RenderTextures/RT_Mirror.renderTexture.meta    |    8 [32m+[m
+ Assets/_Project/Art/Sprites.meta                   |    8 [32m+[m
+ Assets/_Project/Art/Textures.meta                  |    8 [32m+[m
+ Assets/_Project/Art/Textures/01.jpg                |  Bin [31m0[m -> [32m38455[m bytes
+ Assets/_Project/Art/Textures/01.jpg.meta           |  140 [32m+[m
+ Assets/_Project/Art/Textures/02.jpg                |  Bin [31m0[m -> [32m69444[m bytes
+ Assets/_Project/Art/Textures/02.jpg.meta           |  140 [32m+[m
+ Assets/_Project/Art/Textures/03.jpg                |  Bin [31m0[m -> [32m52066[m bytes
+ Assets/_Project/Art/Textures/03.jpg.meta           |  140 [32m+[m
+ Assets/_Project/Art/Textures/04.jpg                |  Bin [31m0[m -> [32m97353[m bytes
+ Assets/_Project/Art/Textures/04.jpg.meta           |  140 [32m+[m
+ Assets/_Project/Art/Textures/05.jpg                |  Bin [31m0[m -> [32m100248[m bytes
+ Assets/_Proje
